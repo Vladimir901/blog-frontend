@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function AuthForm() {
@@ -7,6 +7,8 @@ function AuthForm() {
     const [isNewUser, setIsNewUser] = useState(false)
     const [login, setLogin] = useState("")
     const [password, setPassword] = useState("")
+
+    useEffect(()=>localStorage.setItem("user", JSON.stringify({id: 1, name: "User"})),[])
 
     const handleAuth = () => {
         navigate("/blog")

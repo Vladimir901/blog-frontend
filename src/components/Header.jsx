@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Outlet } from "react-router-dom"
 
 function Header() {
-localStorage.setItem("user", JSON.stringify({name: "User"}))
+// localStorage.setItem("user", JSON.stringify({name: "User"}))
 const user = JSON.parse(localStorage.getItem('user'))
   return (
     <>

@@ -6,7 +6,7 @@ function TitlePage() {
   return (
     <div style={{width: '100%', height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
         <h1>Добро пожаловать!</h1>
-        <button onClick={()=>navigate('/auth')} style={{padding:'2px 5px'}}>Войти</button>
+        <button onClick={()=>navigate('/auth')} style={{padding:'4px 12px', margin: '1%'}}>Войти</button>
     </div>
   )
 }
